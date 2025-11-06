@@ -1,0 +1,154 @@
+/* ---------- Global Styles ---------- */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+
+/* ---------- Container ---------- */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 60px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 90%;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* ---------- Headings ---------- */
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+h3 {
+  font-weight: 400;
+  color: #e2e2e2;
+  margin-bottom: 40px;
+}
+
+/* ---------- Buttons ---------- */
+button,
+a.button {
+  background: #fff;
+  color: #2575fc;
+  border: none;
+  padding: 12px 28px;
+  margin: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover,
+a.button:hover {
+  background: #2575fc;
+  color: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Button Group (Fix Added Spacing) ---------- */
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px; /* spacing between buttons */
+  margin-top: 25px; /* spacing from the form above */
+}
+
+.form-buttons a,
+.form-buttons button {
+  min-width: 160px;
+  text-align: center;
+}
+
+/* ---------- Student Table ---------- */
+.table-container {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+td {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+tr:hover td {
+  background: rgba(255, 255, 255, 0.25);
+  transition: 0.3s;
+}
+
+/* ---------- Input Form ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+input[type="submit"] {
+  width: 50%;
+  padding: 12px;
+  background: #fff;
+  color: #2575fc;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #2575fc;
+  color: #fff;
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(25px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
